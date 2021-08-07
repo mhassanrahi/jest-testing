@@ -17,9 +17,13 @@ describe('absolute', () => {
     })
 })
 
-
-
 test("sum - adds 1 + 2 to equal 3", () => {
     const result = lib.sum(1, 2)
     expect(result).toBe(3)
+})
+
+
+describe("greet", () => {
+    const result = lib.greet("Hassan")
+    expect(result).toContain("Hello Hassan")
 })
