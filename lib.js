@@ -1,11 +1,5 @@
 module.exports = {
-    absolute: (number) => {
-        if (number > 0) return number;
-        if (number < 0) return -number;
-        return 0;
-    },
+    absolute: (number) => (number >= 0) ? number : -number,
 
-    sum: (a, b) => {
-        return a + b;
-      }
+    sum: (a, b) => a + b
 }
